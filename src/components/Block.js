@@ -2,5 +2,6 @@ import React from "react";
 import './../Block.css'
 
 export default function Block(props){
-    return <div className={props.color === "red" ? "red block" : props.color === "green" ? "green block" : "blue block"}/>
+    if(props.category === props.color || props.category === "all")
+        return <div style={{order: props.order}} className={props.color === "red" ? "red block" : props.color === "green" ? "green block" : "blue block"}/>
 }

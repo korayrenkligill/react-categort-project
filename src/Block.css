@@ -1,4 +1,10 @@
+:root{
+    --box-shadow-spread: 15px;
+}
+
 .block{
+    position: relative;
+    bottom: 0px;
     width: 100px;
     height: 100px;
     border-radius: 30px;
@@ -14,14 +20,17 @@
     background-color: #9cf8ff;
 }
 .red:hover{
-    box-shadow: 0px 0px 10px #ff7878;
+    bottom: 5px;
+    box-shadow: 0px 0px var(--box-shadow-spread) #ff7878;
     background-color: #ff7878;
 }
 .green:hover{
-    box-shadow: 0px 0px 10px #9cffa2;
+    bottom: 5px;
+    box-shadow: 0px 0px var(--box-shadow-spread) #9cffa2;
     background-color: #9cffa2;
 }
 .blue:hover{
-    box-shadow: 0px 0px 10px #9cf8ff;
+    bottom: 5px;
+    box-shadow: 0px 0px var(--box-shadow-spread) #9cf8ff;
     background-color: #9cf8ff;
 }
