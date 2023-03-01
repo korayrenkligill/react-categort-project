@@ -1,0 +1,27 @@
+.block{
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    transition: all .2s;
+}
+.red{
+    background-color: #ff7878;
+}
+.green{
+    background-color: #9cffa2;
+}
+.blue{
+    background-color: #9cf8ff;
+}
+.red:hover{
+    box-shadow: 0px 0px 10px #ff7878;
+    background-color: #ff7878;
+}
+.green:hover{
+    box-shadow: 0px 0px 10px #9cffa2;
+    background-color: #9cffa2;
+}
+.blue:hover{
+    box-shadow: 0px 0px 10px #9cf8ff;
+    background-color: #9cf8ff;
+}

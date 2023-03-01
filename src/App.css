@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  gap: 20px;
+  background-color: #1f1f1f;
 }
-
-.App-link {
-  color: #61dafb;
+.Grid{
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px;
+  gap: 20px;
+  min-width: 460px;
+  min-height: 460px;
+  border: 5px solid #3b3b3b;
+  padding: 30px;
+  border-radius: 40px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Tab button{
+  position: relative;
+  bottom: 0px;
+  background-color: #a3a3a3;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 15px 25px;
+  margin: 5px;
+  transition: all .5s;
+}
+.Tab button:hover{
+  bottom: 7px;
+  padding: 15px 35px;
+  background-color: #d9d9d9;
+  box-shadow: 0px 4px 5px #595959;
+}
+.Active{
+  background-color: #ccffed !important;
+}
+.Active:hover{
+  box-shadow: 0px 4px 5px #57756a !important;
 }
